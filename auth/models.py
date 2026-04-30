@@ -1,6 +1,6 @@
 
 from sqlalchemy import Integer, String, Column
-from database import Base   # ✅ FIXED
+from auth.auth_database import Base   # ✅ FIXED
 
 class User(Base):
     __tablename__ = "users"
